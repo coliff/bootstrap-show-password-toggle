@@ -41,7 +41,7 @@ You should also add `name="current-password"` and `autocomplete="current-passwor
 
 ## Demo
 
-[Demo page](https://coliff.github.io/show-password-toggle/tests/bootstrap4-sign-in)
+[Demo page](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap4-sign-in/)
 
 ## Browser Support
 
