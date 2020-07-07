@@ -17,6 +17,7 @@ A show password as text toggle for Bootstrap forms
 
 - [Download the latest release](https://github.com/coliff/bootstrap-show-password-toggle/)
 - Clone the repo `git clone https://github.com/coliff/bootstrap-show-password-toggle.git`
+- Install with [npm](https://www.npmjs.com/package/bootstrap-show-password-toggle) `npm install bootstrap-show-password-toggle`
 
 ## Usage
 
