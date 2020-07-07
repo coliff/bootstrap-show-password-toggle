@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Show Password Toggle for Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <meta name="description" content="Show Password Toggle for Bootstrap 4">
+  <link rel="stylesheet" href="../../css/show-password-toggle.css">
+  <style>
+    form {
+      max-width: 330px;
+      margin-top: 17%;
+    }
+  </style>
+</head>
+
+<body class="text-center bg-light h-100 mt-5">
+  <form class="text-left mx-auto card p-4 w-100 p-2" autocomplete="off">
+    <h1 class="h3 mb-3 text-center">Please sign in</h1>
+
+    <label for="email" class="text-left ml-0">Email address</label>
+    <input type="email" name="email" id="email" class="form-control mb-3" required autofocus>
+
+    <label for="password">Password</label>
+
+    <div class="input-group">
+      <input type="password" id="password" name="current-password" autocomplete="current-password" class="form-control rounded-right" spellcheck="false" autocorrect="off" autocapitalize="off" required>
+      <button id="toggle-password" type="button" class="d-none"
+        aria-label="Show password as plain text. Warning: this will display your password on the screen.">
+      </button>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">
+      Sign in
+    </button>
+
+  </form>
+
+  <p class="my-3 text-center">
+    <a href="https://github.com/coliff/bootstrap-show-password-toggle" class="text-muted">
+      &copy; 2020
+    </a>
+  </p>
+
+  <script src="../../js/show-password-toggle.min.js" type="module"></script>
+</body>
+
+</html>
