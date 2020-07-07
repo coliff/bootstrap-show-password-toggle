@@ -11,6 +11,8 @@ A show password as text toggle for Bootstrap forms
 - Graceful fallback for browsers with JavaScript disabled
 - Only 1KB gzipped
 
+![show password toggle](https://christianoliff.com/assets/images/2020/show-password-toggle-anim.gif)
+
 ## Quick Start
 
 - [Download the latest release](https://github.com/coliff/bootstrap-show-password-toggle/)
