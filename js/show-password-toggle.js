@@ -1,6 +1,6 @@
-document.getElementById("password").classList.add("input-password");
+document.querySelector("[type='password']").classList.add("input-password");
 document.getElementById("toggle-password").classList.remove("d-none");
-const passwordInput = document.getElementById("password");
+const passwordInput = document.querySelector("[type='password']");
 const togglePasswordButton = document.getElementById("toggle-password");
 togglePasswordButton.addEventListener("click", togglePassword);
 function togglePassword() {
