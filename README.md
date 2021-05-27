@@ -9,6 +9,7 @@ A show password as text toggle for Bootstrap forms
 - Vanilla JavaScript with no dependencies
 - Base64 encoded SVG icons (no external images or fonts required)
 - Graceful fallback for browsers with JavaScript disabled
+- Works with Bootstrap 4 and 5
 - Only 1KB gzipped
 
 ![show password toggle](https://christianoliff.com/img/2020/show-password-toggle-anim.gif)
@@ -28,7 +29,7 @@ A show password as text toggle for Bootstrap forms
 
 ```html
 <div class="input-group">
-  <input type="password" id="password" class="form-control rounded-right" required>
+  <input type="password" id="password" class="form-control rounded" required>
   <button id="toggle-password" type="button" class="d-none"
     aria-label="Show password as plain text. Warning: this will display your password on the screen.">
   </button>
@@ -45,11 +46,12 @@ You should also add `name="current-password"` and `autocomplete="current-passwor
 
 ## Demo
 
-[Demo page](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap4-sign-in/)
+- [Bootstrap 4 Demo](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap4-sign-in/)
+- [Bootstrap 5 Demo](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap5-sign-in/)
 
 ## Browser Support
 
-Works well with all the browsers [supported by Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/browsers-devices/#supported-browsers)
+Works well with all the browsers [supported by Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/browsers-devices/#supported-browsers)
 
 ## FAQS
 
