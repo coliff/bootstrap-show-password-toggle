@@ -38,8 +38,6 @@ A show password as text toggle for Bootstrap forms
 
 3. Load the `show-password-toggle.js` after the form
 
-Note: Internet Explorer 11 includes a 'show password as plain text' on initial click feature as standard so you may wish to not load this library for IE users. You can add the `type="module"` attribute so that it [only loads on modern browsers](https://caniuse.com/#feat=es6-module).
-
 I highly recommend adding the attributes: `spellcheck="false"`, `autocorrect="off"` and `autocapitalize="off"` to the password input so that when the password is displayed in plain text the input is not auto-corrected, capitalized or spellchecked (to avoid red squiggly line underneath).
 
 You should also add `name="current-password"` and `autocomplete="current-password"` to help browsers autocomplete the form.
@@ -61,7 +59,6 @@ A. You could change the icon displayed by replacing the `.input-password[type="p
 
 ## Known Issues
 
-- Edge (Chromium) has a native 'show-password' toggle icon. We could use user-agent sniffing to disable this script for this browser.
 - If the browser autofills the password input then the user-agent will apply `background-image: none !important`.
 - The password input requires the use of the `required` attribute. This is so the background-image is not displayed when the input is empty. (It'd be great if browsers supported the [:blank pseudo-selector](https://developer.mozilla.org/en-US/docs/Web/CSS/:blank)!
 
