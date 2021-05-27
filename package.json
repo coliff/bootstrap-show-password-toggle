@@ -23,7 +23,7 @@
   "files": [
     "css/*",
     "js/*",
-    "LICENSE.md",
+    "LICENSE",
     "package.json",
     "README.md",
     "scss/*"
