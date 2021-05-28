@@ -60,7 +60,7 @@ A. You could change the icon displayed by replacing the `.input-password[type="p
 ## Known Issues
 
 - If the browser autofills the password input then the user-agent will apply `background-image: none !important`.
-- The password input requires the use of the `required` attribute. This is so the background-image is not displayed when the input is empty. (It'd be great if browsers supported the [:blank pseudo-selector](https://developer.mozilla.org/en-US/docs/Web/CSS/:blank)!
+- The password input requires the use of the `required` attribute. This is so the background-image is not displayed when the input is empty. (It'd be great if browsers supported the [:blank pseudo-selector](https://developer.mozilla.org/en-US/docs/Web/CSS/:blank)!)
 
 ## Credits and Thanks
 
