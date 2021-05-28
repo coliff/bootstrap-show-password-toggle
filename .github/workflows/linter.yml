@@ -17,3 +17,6 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_ANSIBLE: false
+          VALIDATE_EDITORCONFIG: false
+          VALIDATE_MARKDOWN: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
