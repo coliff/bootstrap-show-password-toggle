@@ -29,7 +29,7 @@ A show password as text toggle for Bootstrap forms
 
 ```html
 <div class="input-group">
-  <input type="password" id="password" class="form-control rounded" required>
+  <input type="password" class="form-control rounded" required>
   <button id="toggle-password" type="button" class="d-none"
     aria-label="Show password as plain text. Warning: this will display your password on the screen.">
   </button>
