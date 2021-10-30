@@ -15,9 +15,11 @@ if (ShowPasswordTogglesLength) {
     togglePasswordButton.addEventListener('click', function() {
       if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
+        togglePasswordButton.classList.add('password-visible');
         togglePasswordButton.setAttribute('aria-label', togglePasswordButtonLabels.hide);
       } else {
         passwordInput.type = 'password';
+        togglePasswordButton.classList.remove('password-visible');
         togglePasswordButton.setAttribute('aria-label', togglePasswordButtonLabels.show);
       }
     });
