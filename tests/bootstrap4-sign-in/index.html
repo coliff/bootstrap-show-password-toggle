@@ -26,14 +26,22 @@
     <label for="email" class="text-left ml-0">Email address</label>
     <input type="email" name="email" id="email" class="form-control mb-3" required autofocus>
 
-    <label for="password">Password</label>
-
+    <label for="current-password">Password</label>
     <div class="input-group">
-      <input type="password" id="password" name="current-password" autocomplete="current-password"
-        class="form-control rounded" spellcheck="false" autocorrect="off" autocapitalize="off" required>
-      <button id="toggle-password" type="button" class="d-none"
-        aria-label="Show password as plain text. Warning: this will display your password on the screen.">
-      </button>
+      <input type="password" name="password" id="current-password" autocomplete="current-password"
+        class="form-control rounded" spellcheck="false" autocapitalize="off" required
+        data-show="Show password as plain text. Warning: this will display your password on the screen."
+        data-hide="Hide password."
+      >
+    </div>
+
+    <label for="repeat-password">Password repeat</label>
+    <div class="input-group">
+      <input type="password" name="password_repeat" id="repeat-password" autocomplete="current-password"
+             class="form-control rounded" spellcheck="false" autocapitalize="off" required
+             data-show="Show password as plain text. Warning: this will display your password on the screen."
+             data-hide="Hide password."
+      >
     </div>
 
     <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">
@@ -43,7 +51,7 @@
   </form>
 
   <p class="my-3 text-center">
-    <a href="https://github.com/coliff/bootstrap-show-password-toggle" class="text-muted">
+    <a href="https://github.com/slackero/bootstrap-show-password-toggle" class="text-muted">
       &copy; 2021
     </a>
   </p>

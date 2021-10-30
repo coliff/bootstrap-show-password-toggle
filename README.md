@@ -31,18 +31,18 @@ A show password as text toggle for Bootstrap forms
 
 ```html
 <div class="input-group">
-  <input type="password" class="form-control rounded" required>
-  <button id="toggle-password" type="button" class="d-none"
-    aria-label="Show password as plain text. Warning: this will display your password on the screen.">
-  </button>
+  <input type="password" class="form-control rounded" required
+         data-show="Show password as plain text. Warning: this will display your password on the screen."
+         data-hide="Hide password."
+  >
 </div>
 ```
 
 3. Load the `show-password-toggle.js` after the form
 
-I highly recommend adding the attributes: `spellcheck="false"`, `autocorrect="off"` and `autocapitalize="off"` to the password input so that when the password is displayed in plain text the input is not auto-corrected, capitalized or spellchecked (to avoid red squiggly line underneath).
+I highly recommend adding the attributes: `spellcheck="false"` and `autocapitalize="off"` to the password input so that when the password is displayed in plain text the input is not auto-corrected, capitalized or spellchecked (to avoid red squiggly line underneath).
 
-You should also add `name="current-password"` and `autocomplete="current-password"` to help browsers autocomplete the form.
+You should also add `id="current-password"` and `autocomplete="current-password"` to help browsers autocomplete the form.
 
 ## Demo
 
@@ -59,10 +59,20 @@ Q. **Can I change the show password icon?**
 
 A. You could change the icon displayed by replacing the `.input-password[type="password"]` [Base64 encoded](https://yoksel.github.io/url-encoder/) background image. SVG is recommended.
 
+## Changes
+
+### [1.3.0] - 2021-10-30
+- Works with multiple `input[type=password]`.
+- The `aria-label` of the toggle button can be customized adding `data-show` and `data-hide` attributes to the password input.
+- The toggle button is added by JavaScript, remove existing `<button>` tags.
+- The toggle button works more stable.
+- The toggle button is always visible.
+
 ## Known Issues
 
 - If the browser autofills the password input then the user-agent will apply `background-image: none !important`.
 - The password input requires the use of the `required` attribute. This is so the background-image is not displayed when the input is empty. (It'd be great if browsers supported the [:blank](https://developer.mozilla.org/en-US/docs/Web/CSS/:blank) or [:empty](https://developer.mozilla.org/en-US/docs/Web/CSS/:empty) pseudo-selectors!)
+- Browsers without [Element.after()](https://developer.mozilla.org/en-US/docs/Web/API/Element/after#browser_compatibility) are not supported.
 
 ## Credits and Thanks
 
