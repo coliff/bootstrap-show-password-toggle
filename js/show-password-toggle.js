@@ -12,15 +12,18 @@ if (ShowPasswordTogglesLength) {
     togglePasswordButton.type = 'button';
     togglePasswordButton.classList.add('toggle-password');
     togglePasswordButton.setAttribute('aria-label', togglePasswordButtonLabels.show);
+    togglePasswordButton.setAttribute('aria-pressed', 'false');
     togglePasswordButton.addEventListener('click', function() {
       if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
         togglePasswordButton.classList.add('password-visible');
         togglePasswordButton.setAttribute('aria-label', togglePasswordButtonLabels.hide);
+        togglePasswordButton.setAttribute('aria-pressed', 'true');
       } else {
         passwordInput.type = 'password';
         togglePasswordButton.classList.remove('password-visible');
         togglePasswordButton.setAttribute('aria-label', togglePasswordButtonLabels.show);
+        togglePasswordButton.setAttribute('aria-pressed', 'false');
       }
     });
     passwordInput.after(togglePasswordButton);
