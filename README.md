@@ -46,8 +46,8 @@ You should also add `id="current-password"` and `autocomplete="current-password"
 
 ## Demo
 
-- [Bootstrap 4 Demo](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap4-sign-in/)
-- [Bootstrap 5 Demo](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap5-sign-in/)
+- [Bootstrap 4 Demo](https://slackero.github.io/bootstrap-show-password-toggle/tests/bootstrap4-sign-in/)
+- [Bootstrap 5 Demo](https://slackero.github.io/bootstrap-show-password-toggle/tests/bootstrap5-sign-in/)
 
 ## Browser Support
 
@@ -60,6 +60,11 @@ Q. **Can I change the show password icon?**
 A. You could change the icon displayed by replacing the `.input-password[type="password"]` [Base64 encoded](https://yoksel.github.io/url-encoder/) background image. SVG is recommended.
 
 ## Changes
+
+### [1.3.1] - 2021-10-31
+- Fixes the problem that autofill hides the toggle icon.
+- Added the `aria-pressed` attribute.
+- Updated the demos ([Bootstrap 4](https://slackero.github.io/bootstrap-show-password-toggle/tests/bootstrap4-sign-in/), [Bootstrap 5](https://slackero.github.io/bootstrap-show-password-toggle/tests/bootstrap5-sign-in/))
 
 ### [1.3.0] - 2021-10-30
 - Works with multiple `input[type=password]`.

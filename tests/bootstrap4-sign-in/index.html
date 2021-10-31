@@ -4,44 +4,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Show Password Toggle for Bootstrap</title>
+  <title>Show Password Toggle for Bootstrap 4</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css">
   <meta name="description" content="Show Password Toggle for Bootstrap 4">
   <meta name="author" content="Christian Oliff">
   <meta name="twitter:creator" content="@christianoliff">
   <meta name="monetization" content="$ilp.uphold.com/Epqzn3YGr2MB">
   <link rel="stylesheet" href="../../css/show-password-toggle.css">
-  <style>
-    form {
-      max-width: 330px;
-      margin-top: 17%;
-    }
-  </style>
 </head>
 
-<body class="text-center bg-light h-100 mt-5">
-  <form class="text-left mx-auto card p-4 w-100 p-2" autocomplete="off">
-    <h1 class="h3 mb-3 text-center">Please sign in</h1>
+<body class="bg-light p-3">
+  <form class="mx-auto card p-4 col-12 col-sm-8 col-md-5 col-lg-4 mt-sm-4 mt-md-5" autocomplete="off">
+    <h1 class="h2 mb-4 text-center text-primary">Please sign in</h1>
 
-    <label for="email" class="text-left ml-0">Email address</label>
-    <input type="email" name="email" id="email" class="form-control mb-3" required autofocus>
-
-    <label for="current-password">Password</label>
-    <div class="input-group">
-      <input type="password" name="password" id="current-password" autocomplete="current-password"
-        class="form-control rounded" spellcheck="false" autocapitalize="off" required
-        data-show="Show password as plain text. Warning: this will display your password on the screen."
-        data-hide="Hide password."
-      >
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" name="email" id="email" class="form-control" required autofocus>
     </div>
 
-    <label for="repeat-password">Password repeat</label>
-    <div class="input-group">
-      <input type="password" name="password_repeat" id="repeat-password" autocomplete="current-password"
-             class="form-control rounded" spellcheck="false" autocapitalize="off" required
-             data-show="Show password as plain text. Warning: this will display your password on the screen."
-             data-hide="Hide password."
-      >
+    <div class="form-group">
+      <label for="current-password">Password</label>
+      <div class="input-group">
+        <input type="password"
+               name="password"
+               id="current-password"
+               autocomplete="current-password"
+               class="form-control rounded"
+               spellcheck="false"
+               autocapitalize="off"
+               required
+               data-show="Show password as plain text. Warning: this will display your password on the screen."
+               data-hide="Hide password."
+        >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="repeat-password">Password repeat</label>
+      <div class="input-group">
+        <input type="password"
+               name="password_repeat"
+               id="repeat-password"
+               autocomplete="current-password"
+               class="form-control rounded"
+               spellcheck="false"
+               autocapitalize="off"
+               required
+               data-show="Show password as plain text. Warning: this will display your password on the screen."
+               data-hide="Hide password."
+        >
+      </div>
     </div>
 
     <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">
