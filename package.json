@@ -7,17 +7,13 @@
     "forms",
     "password"
   ],
-  "homepage": "https://github.com/coliff/bootstrap-show-password-toggle",
+  "homepage": "https://github.com/slackero/bootstrap-show-password-toggle",
   "bugs": {
-    "url": "https://github.com/coliff/bootstrap-show-password-toggle/issues"
+    "url": "https://github.com/slackero/bootstrap-show-password-toggle/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coliff/bootstrap-show-password-toggle.git"
-  },
-  "funding": {
-    "type": "PayPal",
-    "url": "https://paypal.me/coliff"
+    "url": "git+https://github.com/slackero/bootstrap-show-password-toggle.git"
   },
   "license": "MIT",
   "files": [
@@ -29,6 +25,13 @@
     "scss/*"
   ],
   "author": "Christian Oliff (https://christianoliff.com)",
+  "contributors": [
+    {
+      "name": "Oliver Georgi",
+      "email": "slackero@gmail.com",
+      "url": "https://github.com/slackero/"
+    }
+  ],
   "scripts": {
     "build": "npm-run-all css-lint css-compile css-minify js-lint js-minify",
     "css": "npm-run-all css-lint css-compile css-minify",
