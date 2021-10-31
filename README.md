@@ -1,6 +1,5 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/slackero/bootstrap-show-password-toggle/master/LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/coliff/bootstrap-show-password-toggle.svg?label=github%20stars)](https://github.com/coliff/bootstrap-show-password-toggle)
-[![NPM Version](https://img.shields.io/npm/v/bootstrap-show-password-toggle)](https://www.npmjs.com/package/bootstrap-show-password-toggle)
+[![NPM Version](https://img.shields.io/npm/v/bootstrap-show-password-toggle)](https://www.npmjs.com/package/@slackero/bootstrap-show-password-toggle)
 
 # Show Password Toggle
 
@@ -19,8 +18,7 @@ A show password as text toggle for Bootstrap forms
 
 - [Download the latest release](https://github.com/slackero/bootstrap-show-password-toggle/releases)
 - Clone the repo `git clone https://github.com/slackero/bootstrap-show-password-toggle.git`
-- Install with [npm](https://www.npmjs.com/package/bootstrap-show-password-toggle) `npm install bootstrap-show-password-toggle`
-- Install with [yarn](https://yarnpkg.com/package/bootstrap-show-password-toggle) `yarn add bootstrap-show-password-toggle`
+- Install with [npm](https://www.npmjs.com/package/@slackero/bootstrap-show-password-toggle) `npm i @slackero/bootstrap-show-password-toggle`
 
 ## Usage
 
