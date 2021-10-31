@@ -1,5 +1,5 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/slackero/bootstrap-show-password-toggle/master/LICENSE)
-[![NPM Version](https://img.shields.io/npm/v/bootstrap-show-password-toggle)](https://www.npmjs.com/package/@slackero/bootstrap-show-password-toggle)
+[![NPM Version](https://img.shields.io/npm/v/@slackero/bootstrap-show-password-toggle)](https://www.npmjs.com/package/@slackero/bootstrap-show-password-toggle)
 
 # Show Password Toggle
 
