@@ -1,5 +1,4 @@
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/bootstrap-show-password-toggle/master/LICENSE)
-[![GitHub Super-Linter](https://github.com/coliff/bootstrap-show-password-toggle/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/slackero/bootstrap-show-password-toggle/master/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/coliff/bootstrap-show-password-toggle.svg?label=github%20stars)](https://github.com/coliff/bootstrap-show-password-toggle)
 [![NPM Version](https://img.shields.io/npm/v/bootstrap-show-password-toggle)](https://www.npmjs.com/package/bootstrap-show-password-toggle)
 
@@ -18,8 +17,8 @@ A show password as text toggle for Bootstrap forms
 
 ## Quick Start
 
-- [Download the latest release](https://github.com/coliff/bootstrap-show-password-toggle/)
-- Clone the repo `git clone https://github.com/coliff/bootstrap-show-password-toggle.git`
+- [Download the latest release](https://github.com/slackero/bootstrap-show-password-toggle/releases)
+- Clone the repo `git clone https://github.com/slackero/bootstrap-show-password-toggle.git`
 - Install with [npm](https://www.npmjs.com/package/bootstrap-show-password-toggle) `npm install bootstrap-show-password-toggle`
 - Install with [yarn](https://yarnpkg.com/package/bootstrap-show-password-toggle) `yarn add bootstrap-show-password-toggle`
 
@@ -31,8 +30,10 @@ A show password as text toggle for Bootstrap forms
 
 ```html
 <div class="input-group">
-  <input type="password" class="form-control rounded" required
-         data-show="Show password as plain text. Warning: this will display your password on the screen."
+  <input type="password"
+         class="form-control rounded"
+         required
+         data-show="Show password as plain text."
          data-hide="Hide password."
   >
 </div>
@@ -75,8 +76,6 @@ A. You could change the icon displayed by replacing the `.input-password[type="p
 
 ## Known Issues
 
-- If the browser autofills the password input then the user-agent will apply `background-image: none !important`.
-- The password input requires the use of the `required` attribute. This is so the background-image is not displayed when the input is empty. (It'd be great if browsers supported the [:blank](https://developer.mozilla.org/en-US/docs/Web/CSS/:blank) or [:empty](https://developer.mozilla.org/en-US/docs/Web/CSS/:empty) pseudo-selectors!)
 - Browsers without [Element.after()](https://developer.mozilla.org/en-US/docs/Web/API/Element/after#browser_compatibility) are not supported.
 
 ## Credits and Thanks
