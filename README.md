@@ -2,8 +2,10 @@
 [![GitHub Super-Linter](https://github.com/coliff/bootstrap-show-password-toggle/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![GitHub Stars](https://img.shields.io/github/stars/coliff/bootstrap-show-password-toggle.svg?label=github%20stars)](https://github.com/coliff/bootstrap-show-password-toggle)
 [![NPM Version](https://img.shields.io/npm/v/bootstrap-show-password-toggle)](https://www.npmjs.com/package/bootstrap-show-password-toggle)
+[![NPM Downloads](https://img.shields.io/npm/dt/bootstrap-show-password-toggle.svg)](https://www.npmjs.com/package/bootstrap-show-password-toggle)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/coliff/bootstrap-show-password-toggle.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/coliff/bootstrap-show-password-toggle/context:javascript)
 
-# Show Password Toggle
+# Bootstrap Show Password Toggle
 
 A show password as text toggle for Bootstrap forms
 
