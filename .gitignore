@@ -5,6 +5,7 @@ node_modules/*
 ._*
 .cache
 .DS_Store
+.idea
 Thumbs.db
 
 # Files
