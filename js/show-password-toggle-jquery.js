@@ -8,7 +8,7 @@ $(function () {
         show: $this.data('show') || 'Show password as plain text. Warning: this will display your password on the screen.',
         hide: $this.data('hide') || 'Hide password.'
       };
-      let $toggleButton = $('<button class="toggle-password" aria-label="" aria-pressed="false"></button>');
+      let $toggleButton = $('<button type="button" class="toggle-password" aria-label="" aria-pressed="false"></button>');
       $toggleButton.on('click', function () {
         if ($this.attr('type') === 'password') {
           $this.attr('type', 'text');
