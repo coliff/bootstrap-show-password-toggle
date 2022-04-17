@@ -33,22 +33,25 @@ A show password as text toggle for Bootstrap forms
 
 ```html
 <div class="input-group">
-  <input type="password" class="form-control rounded" required>
-  <button id="toggle-password" type="button" class="d-none"
-    aria-label="Show password as plain text. Warning: this will display your password on the screen.">
-  </button>
+  <input type="password"
+         class="form-control rounded"
+         required
+         data-show="Show password as plain text."
+         data-hide="Hide password."
+  >
 </div>
 ```
 
-3. Load the `show-password-toggle.js` after the form
+3. Load the `show-password-toggle.min.js` after the form
 
-I highly recommend adding the attributes: `spellcheck="false"`, `autocorrect="off"` and `autocapitalize="off"` to the password input so that when the password is displayed in plain text the input is not auto-corrected, capitalized or spellchecked (to avoid red squiggly line underneath).
+I highly recommend adding the attributes: `spellcheck="false"` and `autocapitalize="off"` to the password input so that when the password is displayed in plain text the input is not auto-corrected, capitalized or spellchecked (to avoid red squiggly line underneath).
 
-You should also add `name="current-password"` and `autocomplete="current-password"` to help browsers autocomplete the form.
+You should also add `id="current-password"` and `autocomplete="current-password"` to help browsers autocomplete the form.
 
 ## Demo
 
 - [Bootstrap 4 Demo](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap4-sign-in/)
+- [Bootstrap 4 Demo with jQuery](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap4-jquery-sign-in/)
 - [Bootstrap 5 Demo](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap5-sign-in/)
 
 ## Browser Support
@@ -63,8 +66,7 @@ A. You could change the icon displayed by replacing the `.input-password[type="p
 
 ## Known Issues
 
-- If the browser autofills the password input then the user-agent will apply `background-image: none !important`.
-- The password input requires the use of the `required` attribute. This is so the background-image is not displayed when the input is empty. (It'd be great if browsers supported the [:blank](https://developer.mozilla.org/en-US/docs/Web/CSS/:blank) or [:empty](https://developer.mozilla.org/en-US/docs/Web/CSS/:empty) pseudo-selectors!)
+- For browsers without [Element.after()](https://developer.mozilla.org/en-US/docs/Web/API/Element/after#browser_compatibility) load `show-password-toggle-jquery.min.js` instead. jQuery or Cash needs to be loaded before.
 
 ## Credits and Thanks
 

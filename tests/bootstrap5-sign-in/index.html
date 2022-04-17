@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"">
 
 <head>
   <meta charset="utf-8">
@@ -11,32 +11,49 @@
   <meta name="twitter:creator" content="@christianoliff">
   <meta name="monetization" content="$ilp.uphold.com/Epqzn3YGr2MB">
   <link rel="stylesheet" href="../../css/show-password-toggle.css">
-  <style>
-    form {
-      max-width: 330px;
-      margin-top: 17%;
-    }
-  </style>
   <!-- Bootstrap 5 IE11 Polyfills -->
   <script
     nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/combine/npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"><\/script>');</script>
 </head>
 
-<body class="text-center bg-light h-100 mt-5">
-  <form class="text-left mx-auto card p-4 w-100 p-2" autocomplete="off">
-    <h1 class="h3 mb-3 text-center">Please sign in</h1>
+<body class="bg-light p-3">
+  <form class="mx-auto card p-4 col-12 col-sm-8 col-md-5 col-lg-4 mt-sm-4 mt-md-5" autocomplete="off">
+    <h1 class="h2 mb-4 text-center text-primary">Please sign in</h1>
 
-    <label for="email" class="text-start ms-0">Email address</label>
-    <input type="email" name="email" id="email" class="form-control mb-3" required autofocus>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" name="email" id="email" class="form-control" required autofocus>
+    </div>
 
-    <label for="password" class="text-start">Password</label>
+    <div class="mb-3">
+      <label for="current-password" class="form-label">Password</label>
+      <div class="input-group">
+        <input type="password"
+               name="password"
+               id="current-password"
+               autocomplete="current-password"
+               class="form-control rounded" spellcheck="false" autocapitalize="off" required
+               data-show="Show password as plain text. Warning: this will display your password on the screen."
+               data-hide="Hide password."
+        >
+      </div>
+    </div>
 
-    <div class="input-group">
-      <input type="password" id="password" name="current-password" autocomplete="current-password"
-        class="form-control rounded" spellcheck="false" autocorrect="off" autocapitalize="off" required>
-      <button id="toggle-password" type="button" class="d-none"
-        aria-label="Show password as plain text. Warning: this will display your password on the screen.">
-      </button>
+    <div class="mb-3">
+      <label for="repeat-password" class="form-label">Password repeat</label>
+      <div class="input-group">
+        <input type="password"
+               name="password_repeat"
+               id="repeat-password"
+               autocomplete="current-password"
+               class="form-control rounded"
+               spellcheck="false"
+               autocapitalize="off"
+               required
+               data-show="Show password as plain text. Warning: this will display your password on the screen."
+               data-hide="Hide password."
+        >
+      </div>
     </div>
 
     <button class="btn btn-lg btn-primary w-100 mt-3" type="submit">
@@ -47,10 +64,9 @@
 
   <p class="my-3 text-center">
     <a href="https://github.com/coliff/bootstrap-show-password-toggle" class="small text-muted text-decoration-none">
-      &copy; 2021
-    </a>
-  </p>
-
+        &copy; 2021
+      </a>
+    </p>
   <script src="../../js/show-password-toggle.min.js" async></script>
 </body>
 
