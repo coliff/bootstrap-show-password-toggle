@@ -1,8 +1,8 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/bootstrap-show-password-toggle/master/LICENSE)
 [![GitHub Super-Linter](https://github.com/coliff/bootstrap-show-password-toggle/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![GitHub Stars](https://img.shields.io/github/stars/coliff/bootstrap-show-password-toggle.svg?label=github%20stars)](https://github.com/coliff/bootstrap-show-password-toggle)
-[![NPM Version](https://img.shields.io/npm/v/bootstrap-show-password-toggle)](https://www.npmjs.com/package/bootstrap-show-password-toggle)
-[![NPM Downloads](https://img.shields.io/npm/dt/bootstrap-show-password-toggle.svg)](https://www.npmjs.com/package/bootstrap-show-password-toggle)
+[![npm Version](https://img.shields.io/npm/v/bootstrap-show-password-toggle)](https://www.npmjs.com/package/bootstrap-show-password-toggle)
+[![npm Downloads](https://img.shields.io/npm/dt/bootstrap-show-password-toggle.svg)](https://www.npmjs.com/package/bootstrap-show-password-toggle)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/coliff/bootstrap-show-password-toggle.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/coliff/bootstrap-show-password-toggle/context:javascript)
 
 # Bootstrap Show Password Toggle
@@ -27,7 +27,7 @@ A show password as text toggle for Bootstrap forms
 
 ## Usage
 
-1. Include the `show-password-toggle.css` in your CSS
+1. Include the `show-password-toggle.min.css` in your CSS
 
 2. Wrap the password input in an `input-group` div as follows:
 
@@ -40,7 +40,7 @@ A show password as text toggle for Bootstrap forms
 </div>
 ```
 
-3. Load the `show-password-toggle.js` after the form
+3. Load the `show-password-toggle.min.js` after the form
 
 I highly recommend adding the attributes: `spellcheck="false"`, `autocorrect="off"` and `autocapitalize="off"` to the password input so that when the password is displayed in plain text the input is not auto-corrected, capitalized or spellchecked (to avoid red squiggly line underneath).
 
