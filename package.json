@@ -46,6 +46,6 @@
     "sass": "^1.55.0",
     "stylelint": "14.13.0",
     "stylelint-config-twbs-bootstrap": "5.0.0",
-    "terser": "^5.14.2"
+    "terser": "^5.15.0"
   }
 }
