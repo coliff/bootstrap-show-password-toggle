@@ -1,0 +1,20 @@
+{
+  "version": "0.2",
+  "words": [
+    "autofills",
+    "christianoliff",
+    "cleancss",
+    "Dutton",
+    "Epqzn",
+    "fnames",
+    "Oliff",
+    "stylelint",
+    "twbs"
+  ],
+  "language": "en,en-US",
+  "ignorePaths": [
+    ".cspell.json",
+    "**/node_modules/**"
+  ],
+  "useGitignore": true
+}
