@@ -68,4 +68,4 @@ A. You could change the icon displayed by replacing the `.input-password[type="p
 ## Credits and Thanks
 
 - MDO and Bootstrap team for the [icons](https://icons.getbootstrap.com/icons/eye-slash/)
-- Sam Dutton at Google for the idea and initial JavaScript from the '[Sign-in form Best Practises](https://web.dev/sign-in-form-best-practices/)' article
+- Sam Dutton at Google for the idea and initial JavaScript from the '[Sign-in form Best Practices](https://web.dev/sign-in-form-best-practices/)' article
