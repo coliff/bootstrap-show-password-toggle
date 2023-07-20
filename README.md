@@ -52,13 +52,13 @@ You should also add `name="current-password"` and `autocomplete="current-passwor
 
 ## Browser Support
 
-Works well with all the browsers [supported by Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/browsers-devices/#supported-browsers)
+Works well with all the browsers [supported by Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/browsers-devices/#supported-browsers)
 
 ## FAQS
 
 Q. **Can I change the show password icon?**
 
-A. You could change the icon displayed by replacing the `.input-password[type="password"]` [Base64 encoded](https://yoksel.github.io/url-encoder/) background image. SVG is recommended.
+A. Yes you can change the icon displayed by replacing the `.input-password[type="password"]` [Base64 encoded](https://yoksel.github.io/url-encoder/) background image. SVG is recommended.
 
 ## Known Issues
 
@@ -69,3 +69,4 @@ A. You could change the icon displayed by replacing the `.input-password[type="p
 
 - MDO and Bootstrap team for the [icons](https://icons.getbootstrap.com/icons/eye-slash/)
 - Sam Dutton at Google for the idea and initial JavaScript from the '[Sign-in form Best Practices](https://web.dev/sign-in-form-best-practices/)' article
+- [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers
