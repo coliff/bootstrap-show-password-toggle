@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="">
+<html lang="en" data-bs-theme="auto">
 
 <head>
   <meta charset="utf-8">
@@ -11,6 +11,11 @@
   <meta name="twitter:creator" content="@christianoliff">
   <meta name="monetization" content="$ilp.uphold.com/Epqzn3YGr2MB">
   <link rel="stylesheet" href="../../css/show-password-toggle.css">
+  <script>
+    if (window.xmatchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+    }
+  </script>
   <style>
     form {
       max-width: 330px;
@@ -23,7 +28,7 @@
 </head>
 
 <body class="text-center bg-secondary-subtle h-100 mt-5">
-  <form class="text-left mx-auto card p-4 w-100 p-2" autocomplete="off">
+  <form class="mx-auto card p-4 w-100 p-2 shadow-sm" autocomplete="off">
     <h1 class="h3 mb-3 text-center">Please sign in</h1>
 
     <label for="email" class="text-start ms-0">Email address</label>
@@ -51,7 +56,7 @@
     </a>
   </p>
 
-  <script src="../../js/show-password-toggle.min.js" async></script>
+  <script src="../../js/show-password-toggle.js" async></script>
 </body>
 
 </html>

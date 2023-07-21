@@ -13,6 +13,7 @@ A show password as text toggle for Bootstrap forms
 - Base64 encoded SVG icons (no external images or fonts required)
 - Graceful fallback for browsers with JavaScript disabled
 - Works with Bootstrap 4 and 5
+- Supports dark mode (Bootstrap 5 only)
 - Only 1KB gzipped
 
 ![show password toggle](https://christianoliff.com/img/2020/show-password-toggle-anim.gif)
@@ -47,8 +48,8 @@ You should also add `name="current-password"` and `autocomplete="current-passwor
 
 ## Demo
 
-- [Bootstrap 4 Demo](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap4-sign-in/)
 - [Bootstrap 5 Demo](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap5-sign-in/)
+- [Bootstrap 4 Demo](https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap4-sign-in/)
 
 ## Browser Support
 
@@ -63,7 +64,7 @@ A. Yes you can change the icon displayed by replacing the `.input-password[type=
 ## Known Issues
 
 - If the browser autofills the password input then the user-agent will apply `background-image: none !important`.
-- The password input requires the use of the `required` attribute. This is so the background-image is not displayed when the input is empty. (It'd be great if browsers supported the [:blank](https://developer.mozilla.org/en-US/docs/Web/CSS/:blank) or [:empty](https://developer.mozilla.org/en-US/docs/Web/CSS/:empty) pseudo-selectors!)
+- The password input requires the use of the `required` attribute. This is so the background-image is not displayed when the input is empty. (It'd be great if browsers supported the [:blank](https://developer.mozilla.org/en-US/docs/Web/CSS/:blank) pseudo-selector!)
 
 ## Credits and Thanks
 
