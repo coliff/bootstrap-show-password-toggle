@@ -1,3 +1,9 @@
+/*!
+ * Bootstrap Show Password Toggle v1.4.0
+ * Copyright 2020-2023 C.Oliff
+ * Licensed under MIT (https://github.com/coliff/bootstrap-show-password-toggle/blob/main/LICENSE)
+ */
+
 var ShowPasswordToggle = document.querySelector("[type='password']");
 ShowPasswordToggle.onclick = function () {
   document.querySelector("[type='password']").classList.add("input-password");
