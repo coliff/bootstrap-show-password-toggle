@@ -3,6 +3,8 @@ name: Lint Code Base
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 permissions:
   contents: read
