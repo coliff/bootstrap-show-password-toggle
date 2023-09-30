@@ -3,6 +3,8 @@ name: Lint Code Base
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 permissions:
   contents: read
@@ -33,6 +35,7 @@ jobs:
           LOG_LEVEL: NOTICE
           SUPPRESS_POSSUM: true
           VALIDATE_ALL_CODEBASE: false
+          VALIDATE_CSS: false
           VALIDATE_EDITORCONFIG: false
           VALIDATE_MARKDOWN: false
           VALIDATE_NATURAL_LANGUAGE: false

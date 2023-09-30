@@ -1,5 +1,5 @@
 /*!
- * Bootstrap Show Password Toggle v1.4.0
+ * Bootstrap Show Password Toggle v1.4.1
  * Copyright 2020-2023 C.Oliff
  * Licensed under MIT (https://github.com/coliff/bootstrap-show-password-toggle/blob/main/LICENSE)
  */
