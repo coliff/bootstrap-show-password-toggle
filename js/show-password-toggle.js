@@ -1,6 +1,6 @@
 /*!
  * Bootstrap Show Password Toggle v1.4.1
- * Copyright 2020-2023 C.Oliff
+ * Copyright 2020-2024 C.Oliff
  * Licensed under MIT (https://github.com/coliff/bootstrap-show-password-toggle/blob/main/LICENSE)
  */
 
@@ -21,8 +21,7 @@ ShowPasswordToggle.onclick = function () {
       passwordInput.type = "password";
       togglePasswordButton.setAttribute(
         "aria-label",
-        "Show password as plain text. " +
-          "Warning: this will display your password on the screen."
+        "Show password as plain text. Warning: this will display your password on the screen."
       );
     }
   }

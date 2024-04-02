@@ -1,0 +1,15 @@
+{
+  "bracketSameLine": true,
+  "embeddedLanguageFormatting": "off",
+  "trailingComma": "es5",
+  "printWidth": 120,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "htmlWhitespaceSensitivity": "css",
+        "printWidth": 280
+      }
+    }
+  ]
+}
