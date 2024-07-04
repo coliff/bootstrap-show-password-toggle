@@ -1,0 +1,28 @@
+{
+  "name": "coliff/bootstrap-show-password-toggle",
+  "description": "A show password as text toggle for Bootstrap",
+  "license": "MIT",
+  "homepage": "https://github.com/coliff/bootstrap-show-password-toggle#readme",
+  "keywords": [
+    "bootstrap",
+    "forms",
+    "password"
+  ],
+  "authors": [
+    {
+      "name": "Christian Oliff",
+      "homepage": "https://christianoliff.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/coliff/bootstrap-show-password-toggle/issues",
+    "docs": "https://github.com/coliff/bootstrap-show-password-toggle#readme"
+  },
+  "funding": [
+    {
+      "type": "PayPal",
+      "url": "https://paypal.me/coliff"
+    }
+  ]
+}
