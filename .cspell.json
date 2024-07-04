@@ -4,17 +4,23 @@
     "autofills",
     "christianoliff",
     "cleancss",
+    "CODEOWNERS",
+    "coliff",
     "Cpath",
     "Csvg",
     "Dutton",
     "Epqzn",
     "fnames",
+    "GITLEAKS",
     "gzipped",
     "Oliff",
     "stylelint",
     "twbs"
   ],
   "language": "en,en-US",
-  "ignorePaths": [".cspell.json", "**/node_modules/**"],
+  "ignorePaths": [
+    ".cspell.json",
+    "**/node_modules/**"
+  ],
   "useGitignore": true
 }
