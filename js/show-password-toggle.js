@@ -5,12 +5,11 @@
  */
 
 var ShowPasswordToggle = document.querySelector("[type='password']");
+ShowPasswordToggle.classList.add("input-password");
+document.getElementById("toggle-password").classList.remove("d-none");
 ShowPasswordToggle.onclick = function () {
-  document.querySelector("[type='password']").classList.add("input-password");
-  document.getElementById("toggle-password").classList.remove("d-none");
-
-  const passwordInput = document.querySelector("[type='password']");
-  const togglePasswordButton = document.getElementById("toggle-password");
+  var passwordInput = document.querySelector(".input-password");
+  var togglePasswordButton = document.getElementById("toggle-password");
 
   togglePasswordButton.addEventListener("click", togglePassword);
   function togglePassword() {
