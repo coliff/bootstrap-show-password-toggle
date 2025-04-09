@@ -20,6 +20,7 @@
     "url": "https://paypal.me/coliff"
   },
   "license": "MIT",
+  "author": "Christian Oliff (https://christianoliff.com)",
   "files": [
     "css/*",
     "js/*",
@@ -28,7 +29,6 @@
     "README.md",
     "scss/*"
   ],
-  "author": "Christian Oliff (https://christianoliff.com)",
   "scripts": {
     "build": "npm-run-all css-lint css-compile css-minify js-lint js-minify",
     "css": "npm-run-all css-lint css-compile css-minify",
@@ -38,7 +38,7 @@
     "js-lint": "eslint js/show-password-toggle.js --fix",
     "js-minify": "terser --ecma 5 --keep-classnames --keep-fnames --output js/show-password-toggle.min.js -- js/show-password-toggle.js",
     "pa11y": "npx pa11y https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap5-sign-in/",
-    "prettier": "npx prettier --write \"**/*.{css,html,js,json,scss,yml}\"",
+    "prettier": "npx prettier@3.5.3 --write \"**/*.{css,html,js,json,scss,yml}\"",
     "serve": "npx http-server -o /tests/bootstrap5-sign-in/ -p 8080 -c-1",
     "test": "npm-run-all css-lint js-lint"
   },
@@ -52,6 +52,6 @@
     "terser": "5.39.0"
   },
   "volta": {
-    "node": "20.18.1"
+    "node": "20.19.0"
   }
 }
