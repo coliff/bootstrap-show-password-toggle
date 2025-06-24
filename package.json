@@ -34,22 +34,24 @@
     "css": "npm-run-all css-lint css-compile css-minify",
     "css-compile": "sass --style expanded --source-map --embed-sources scss:css",
     "css-lint": "stylelint \"scss/*.scss\" --fix -f verbose",
+    "html-lint": "htmlhint \"tests/bootstrap5-sign-in/*.html\"",
     "css-minify": "cleancss -O1 --format breakWith=lf --output css/show-password-toggle.min.css css/show-password-toggle.css",
     "js-lint": "eslint js/show-password-toggle.js --fix",
     "js-minify": "terser --ecma 5 --keep-classnames --keep-fnames --output js/show-password-toggle.min.js -- js/show-password-toggle.js",
     "pa11y": "npx pa11y https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap5-sign-in/",
     "prettier": "npx prettier@3.5.3 --write \"**/*.{css,html,js,json,scss,yml}\"",
     "serve": "npx http-server -o /tests/bootstrap5-sign-in/ -p 8080 -c-1",
-    "test": "npm-run-all css-lint js-lint"
+    "test": "npm-run-all css-lint js-lint html-lint"
   },
   "devDependencies": {
     "clean-css-cli": "5.6.3",
     "eslint": "8.57.1",
-    "npm-run-all": "4.1.5",
+    "htmlhint": "^1.6.3",
+    "npm-run-all2": "^8.0.4",
     "sass": "1.86.3",
-    "stylelint": "16.20.0",
-    "stylelint-config-twbs-bootstrap": "16.0.0",
-    "terser": "5.39.0"
+    "stylelint": "16.21.0",
+    "stylelint-config-twbs-bootstrap": "16.1.0",
+    "terser": "5.43.1"
   },
   "volta": {
     "node": "20.19.0"
