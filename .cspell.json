@@ -14,9 +14,11 @@
     "fnames",
     "GITLEAKS",
     "gzipped",
+    "htmlhint",
     "Oliff",
     "sarif",
     "stylelint",
+    "tagname",
     "twbs"
   ],
   "language": "en,en-US",
