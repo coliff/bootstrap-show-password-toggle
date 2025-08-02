@@ -49,7 +49,7 @@
     "htmlhint": "^1.6.3",
     "npm-run-all2": "^8.0.4",
     "sass": "1.89.2",
-    "stylelint": "16.21.0",
+    "stylelint": "16.23.0",
     "stylelint-config-twbs-bootstrap": "16.1.0",
     "terser": "5.43.1"
   },
