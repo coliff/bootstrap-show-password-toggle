@@ -4,3 +4,4 @@ CODEOWNERS
 *.css
 *.min.*
 *.md
+.cspell.json
