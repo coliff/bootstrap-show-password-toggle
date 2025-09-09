@@ -16,6 +16,7 @@
     "gzipped",
     "htmlhint",
     "Oliff",
+    "ossf",
     "sarif",
     "stylelint",
     "tagname",
