@@ -31,7 +31,6 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           IGNORE_GITIGNORED_FILES: true
-          JAVASCRIPT_DEFAULT_STYLE: prettier
           LINTER_RULES_PATH: /
           LOG_LEVEL: NOTICE
           SUPPRESS_POSSUM: true
@@ -39,6 +38,7 @@ jobs:
           VALIDATE_CHECKOV: false
           VALIDATE_CSS: false
           VALIDATE_EDITORCONFIG: false
+          VALIDATE_GIT_COMMITLINT: false
           VALIDATE_GITLEAKS: false
           VALIDATE_HTML: false
           VALIDATE_JSCPD: false
