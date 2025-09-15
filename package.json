@@ -46,7 +46,7 @@
   "devDependencies": {
     "clean-css-cli": "5.6.3",
     "eslint": "8.57.1",
-    "htmlhint": "^1.6.3",
+    "htmlhint": "^1.7.0",
     "npm-run-all2": "^8.0.4",
     "sass": "1.89.2",
     "stylelint": "16.23.1",
