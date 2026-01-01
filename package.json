@@ -48,7 +48,7 @@
     "eslint": "8.57.1",
     "htmlhint": "^1.8.0",
     "npm-run-all2": "^8.0.4",
-    "sass": "1.94.2",
+    "sass": "1.97.1",
     "stylelint": "16.26.1",
     "stylelint-config-twbs-bootstrap": "16.1.0",
     "terser": "5.44.1"
