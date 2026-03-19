@@ -39,14 +39,14 @@
     "js-lint": "eslint js/show-password-toggle.js --fix",
     "js-minify": "terser --ecma 5 --keep-classnames --keep-fnames --output js/show-password-toggle.min.js -- js/show-password-toggle.js",
     "pa11y": "npx pa11y https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap5-sign-in/",
-    "prettier": "npx prettier@3.5.3 --write \"**/*.{css,html,js,json,scss,yml}\"",
+    "prettier": "npx prettier@3 --write \"**/*.{css,html,js,json,scss,yml}\"",
     "serve": "npx http-server -o /tests/bootstrap5-sign-in/ -p 8080 -c-1",
     "test": "npm-run-all css-lint js-lint html-lint"
   },
   "devDependencies": {
     "clean-css-cli": "5.6.3",
     "eslint": "8.57.1",
-    "htmlhint": "^1.8.0",
+    "htmlhint": "1.9.2",
     "npm-run-all2": "^8.0.4",
     "sass": "1.94.2",
     "stylelint": "16.26.1",
@@ -54,6 +54,6 @@
     "terser": "5.44.1"
   },
   "volta": {
-    "node": "20.19.0"
+    "node": "22.22.1"
   }
 }
