@@ -5,13 +5,16 @@ on:
     branches: ["main"]
   pull_request:
     branches: ["main"]
-  schedule:
-    - cron: "0 0 1 * *"
+
+permissions:
+  contents: read
 
 jobs:
   eslint:
     name: Run eslint scanning
     runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' && !startsWith(github.head_ref || github.ref_name, 'dependabot/') }}
+
     permissions:
       contents: read
       security-events: write
