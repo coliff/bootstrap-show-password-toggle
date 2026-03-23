@@ -18,6 +18,7 @@ jobs:
       statuses: write
     name: Lint Code Base
     runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' && !startsWith(github.head_ref || github.ref_name, 'dependabot/') }}
 
     steps:
       - name: Checkout Code

@@ -5,6 +5,7 @@
     "node": true
   },
   "extends": ["eslint:recommended"],
+  "ignorePatterns": ["*.min.*"],
   "rules": {
     "no-undef": "off"
   }
