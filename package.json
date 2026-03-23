@@ -51,7 +51,7 @@
     "sass": "1.94.2",
     "stylelint": "16.26.1",
     "stylelint-config-twbs-bootstrap": "16.1.0",
-    "terser": "5.44.1"
+    "terser": "5.46.1"
   },
   "volta": {
     "node": "22.22.1"
