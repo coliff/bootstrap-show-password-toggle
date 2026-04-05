@@ -34,10 +34,11 @@
     "css": "npm-run-all css-lint css-compile css-minify",
     "css-compile": "sass --style expanded --source-map --embed-sources scss:css",
     "css-lint": "stylelint \"scss/*.scss\" --fix -f verbose",
-    "html-lint": "htmlhint \"tests/bootstrap5-sign-in/*.html\"",
+    "html-lint": "htmlhint \"tests/**/*.html\"",
     "css-minify": "cleancss -O1 --format breakWith=lf --output css/show-password-toggle.min.css css/show-password-toggle.css",
     "js-lint": "eslint js/show-password-toggle.js --fix",
     "js-minify": "terser --ecma 5 --keep-classnames --keep-fnames --output js/show-password-toggle.min.js -- js/show-password-toggle.js",
+    "lint": "npm-run-all css-lint js-lint html-lint",
     "pa11y": "npx pa11y https://coliff.github.io/bootstrap-show-password-toggle/tests/bootstrap5-sign-in/",
     "prettier": "npx prettier@3 --write \"**/*.{css,html,js,json,scss,yml}\"",
     "serve": "npx http-server -o /tests/bootstrap5-sign-in/ -p 8080 -c-1",
@@ -54,6 +55,6 @@
     "terser": "5.46.1"
   },
   "volta": {
-    "node": "22.22.1"
+    "node": "22.22.2"
   }
 }

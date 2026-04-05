@@ -1,12 +1,24 @@
 {
   "root": true,
   "env": {
+    "browser": true,
     "es6": true,
     "node": true
   },
   "extends": ["eslint:recommended"],
   "ignorePatterns": ["*.min.*"],
   "rules": {
-    "no-undef": "off"
+    "curly": "error",
+    "dot-notation": "error",
+    "eqeqeq": "error",
+    "no-implicit-coercion": "error",
+    "no-return-assign": "error",
+    "no-shadow": "error",
+    "no-unneeded-ternary": "error",
+    "no-undef": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "radix": "error",
+    "yoda": "error"
   }
 }

@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/coliff/bootstrap-show-password-toggle/blob/main/LICENSE)
  */
 
-var ShowPasswordToggle = document.querySelector("[type='password']");
+const ShowPasswordToggle = document.querySelector("[type='password']");
 ShowPasswordToggle.onclick = function () {
   document.querySelector("[type='password']").classList.add("input-password");
   document.getElementById("toggle-password").classList.remove("d-none");
