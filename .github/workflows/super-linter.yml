@@ -27,6 +27,9 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
+      - name: Install Dependencies
+        run: npm install
+
       - name: Lint Code Base
         uses: super-linter/super-linter/slim@9e863354e3ff62e0727d37183162c4a88873df41 # v8.6.0
         env:
@@ -40,7 +43,6 @@ jobs:
           VALIDATE_BIOME_FORMAT: false
           VALIDATE_BIOME_LINT: false
           VALIDATE_CHECKOV: false
-          VALIDATE_CSS: false
           VALIDATE_EDITORCONFIG: false
           VALIDATE_GIT_COMMITLINT: false
           VALIDATE_GITLEAKS: false

@@ -2,7 +2,9 @@
   "alt-require": true,
   "attr-lowercase": true,
   "attr-no-duplication": true,
+  "attr-no-unnecessary-whitespace": true,
   "attr-value-double-quotes": true,
+  "attr-value-no-duplication": true,
   "attr-whitespace": true,
   "button-type-require": true,
   "doctype-first": true,
@@ -11,7 +13,9 @@
   "frame-title-require": true,
   "h1-require": true,
   "html-lang-require": true,
+  "id-class-ad-disabled": true,
   "id-unique": true,
+  "input-requires-label": true,
   "link-rel-canonical-require": false,
   "main-require": true,
   "meta-charset-require": true,
@@ -21,6 +25,7 @@
   "src-not-empty": true,
   "tag-no-obsolete": true,
   "tag-pair": true,
+  "tags-check": false,
   "tagname-lowercase": true,
   "title-require": true
 }
