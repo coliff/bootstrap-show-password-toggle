@@ -5,20 +5,44 @@
     "es6": true,
     "node": true
   },
+  "overrides": [
+    {
+      "files": ["*.mjs"],
+      "parserOptions": {
+        "ecmaVersion": 2022,
+        "sourceType": "module"
+      }
+    }
+  ],
   "extends": ["eslint:recommended"],
   "ignorePatterns": ["*.min.*"],
   "rules": {
+    "array-callback-return": "error",
     "curly": "error",
+    "default-case": "error",
+    "default-case-last": "error",
     "dot-notation": "error",
     "eqeqeq": "error",
+    "func-name-matching": "error",
+    "grouped-accessor-pairs": "error",
     "no-implicit-coercion": "error",
+    "no-implicit-globals": "error",
     "no-return-assign": "error",
     "no-shadow": "error",
+    "no-throw-literal": "error",
     "no-unneeded-ternary": "error",
     "no-undef": "error",
+    "no-useless-call": "error",
+    "no-useless-concat": "error",
+    "no-useless-return": "error",
     "no-var": "error",
+    "object-shorthand": "error",
     "prefer-const": "error",
+    "prefer-promise-reject-errors": "error",
+    "prefer-regex-literals": "error",
     "radix": "error",
+    "require-await": "error",
+    "vars-on-top": "error",
     "yoda": "error"
   }
 }
