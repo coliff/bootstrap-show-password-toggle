@@ -91,4 +91,4 @@ jobs:
 
       - name: Publish to npm
         working-directory: dist
-        run: npm publish --provenance "$(node -p "require('./npm-pack.json')[0].filename")"
+        run: npm publish --provenance "$(node -p 'require("./npm-pack.json")[0].filename')"
