@@ -48,13 +48,13 @@
     "clean-css-cli": "5.6.3",
     "eslint": "8.57.1",
     "htmlhint": "1.9.2",
-    "npm-run-all2": "^8.0.4",
-    "sass": "1.94.2",
+    "npm-run-all2": "^9.0.3",
+    "sass": "1.105.0",
     "stylelint": "16.26.1",
     "stylelint-config-twbs-bootstrap": "16.1.0",
-    "terser": "5.46.1"
+    "terser": "5.51.2"
   },
   "volta": {
-    "node": "22.22.2"
+    "node": "22.23.3"
   }
 }

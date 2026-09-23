@@ -5,24 +5,31 @@
  */
 
 const ShowPasswordToggle = document.querySelector("[type='password']");
-ShowPasswordToggle.onclick = function () {
-  document.querySelector("[type='password']").classList.add("input-password");
-  document.getElementById("toggle-password").classList.remove("d-none");
+const togglePasswordButton = document.getElementById("toggle-password");
 
-  const passwordInput = document.querySelector("[type='password']");
-  const togglePasswordButton = document.getElementById("toggle-password");
-
-  togglePasswordButton.addEventListener("click", togglePassword);
-  function togglePassword() {
-    if (passwordInput.type === "password") {
-      passwordInput.type = "text";
+if (ShowPasswordToggle && togglePasswordButton) {
+  const togglePassword = function () {
+    if (ShowPasswordToggle.type === "password") {
+      ShowPasswordToggle.type = "text";
       togglePasswordButton.setAttribute("aria-label", "Hide password.");
     } else {
-      passwordInput.type = "password";
+      ShowPasswordToggle.type = "password";
       togglePasswordButton.setAttribute(
         "aria-label",
         "Show password as plain text. Warning: this will display your password on the screen."
       );
     }
-  }
-};
+  };
+
+  // Reveal the toggle the first time the field is focused (by mouse, touch or keyboard)
+  // and only attach the click handler once, so repeated focus/clicks don't stack listeners.
+  ShowPasswordToggle.addEventListener(
+    "focus",
+    function () {
+      ShowPasswordToggle.classList.add("input-password");
+      togglePasswordButton.classList.remove("d-none");
+      togglePasswordButton.addEventListener("click", togglePassword);
+    },
+    { once: true }
+  );
+}
