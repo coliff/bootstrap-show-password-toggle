@@ -2,8 +2,8 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
-    "htmlhint.vscode-htmlhint",
     "esbenp.prettier-vscode",
+    "htmlhint.vscode-htmlhint",
     "stylelint.vscode-stylelint"
   ]
 }

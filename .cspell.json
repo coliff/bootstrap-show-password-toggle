@@ -16,12 +16,14 @@
     "GITLEAKS",
     "gzipped",
     "htmlhint",
+    "nvmrc",
     "Oliff",
     "ossf",
     "sarif",
     "stylelint",
     "tagname",
-    "twbs"
+    "twbs",
+    "ZIZMOR"
   ],
   "language": "en,en-US",
   "ignorePaths": [
