@@ -27,8 +27,8 @@ jobs:
           persist-credentials: false
 
       - name: Install ESLint
-        run: |
-          npm install eslint@8.57.1 @microsoft/eslint-formatter-sarif@3
+        run: npm install eslint@8.57.1 @microsoft/eslint-formatter-sarif@3 # zizmor: ignore[adhoc-packages] versions pinned, repo has no lockfile
+
       - name: Run ESLint
         run: npx eslint .
           --config .eslintrc.json

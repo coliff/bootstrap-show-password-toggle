@@ -23,18 +23,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Setup Node.js
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version-file: .nvmrc
+          package-manager-cache: false
 
       - name: Verify release tag matches package version
         if: ${{ github.event_name == 'release' }}
+        env:
+          TAG_NAME: ${{ github.event.release.tag_name }}
         run: |
           PACKAGE_VERSION="$(node -p "require('./package.json').version")"
-          TAG_NAME="${{ github.event.release.tag_name }}"
-
           if [ "$TAG_NAME" != "$PACKAGE_VERSION" ] && [ "$TAG_NAME" != "v$PACKAGE_VERSION" ]; then
             echo "Release tag '$TAG_NAME' does not match package version '$PACKAGE_VERSION'."
             exit 1
@@ -91,7 +94,7 @@ jobs:
 
       # npm trusted publishing (OIDC) requires npm 11.5.1 or later
       - name: Update npm
-        run: npm install -g npm@11
+        run: npm install -g npm@11 # zizmor: ignore[adhoc-packages] npm itself must be upgraded for OIDC publishing
 
       - name: Publish to npm
         working-directory: dist
