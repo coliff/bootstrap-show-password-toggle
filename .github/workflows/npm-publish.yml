@@ -15,7 +15,7 @@ concurrency:
 jobs:
   build:
     name: Build release artifact
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     if: ${{ github.repository == 'coliff/bootstrap-show-password-toggle' }}
     permissions:
       contents: read
@@ -70,7 +70,7 @@ jobs:
 
   publish:
     name: Publish package
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     needs: build
     environment:
       name: npm
